@@ -1,0 +1,102 @@
+"use client";
+import Button from "@/components/MUIComponents/Button";
+import { Grid, Stack, Typography, useTheme } from "@mui/material";
+import Image from "next/image";
+
+const IMAGE_DATA = [
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1615140560683-E4XPHODZJSBUMYF1MSQA/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1614045601785-56GNOQPPTZIQSL3YWJHA/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1612664058252-8C0K9TASWKU4XAGGV3J4/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1615140560683-E4XPHODZJSBUMYF1MSQA/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1614045601785-56GNOQPPTZIQSL3YWJHA/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1612664058252-8C0K9TASWKU4XAGGV3J4/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1614045601785-56GNOQPPTZIQSL3YWJHA/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+  {
+    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1612664058252-8C0K9TASWKU4XAGGV3J4/image-asset.jpeg?format=500w",
+    title: "Image",
+  },
+];
+
+const HomeGalery = () => {
+  const theme = useTheme();
+
+  return (
+    <Stack
+      width="100%"
+      justifyContent="center"
+      alignItems="center"
+      py={8}
+      sx={{
+        background:
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.squarespace-cdn.com/content/v1/62e6c7b70731e15cb02e68de/1660253804440-KZP04KWFFS4DCCBM8SQI/IMG_0122.jpg')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <Typography component="h4" variant="h4" color="common.white" mb={2}>
+        Наши Дизайни
+      </Typography>
+      <Typography
+        component="h2"
+        variant="h2"
+        color="common.white"
+        sx={{
+          width: "100%",
+          maxWidth: "800px",
+          borderBottom: `3px solid ${theme.palette.common.white}`,
+          pb: "1rem",
+          m: "0 auto 4rem auto",
+          textAlign: "center",
+        }}
+        mb={6}
+      >
+        Спрете времето. Останете красиви
+      </Typography>
+
+      <Grid container justifyContent="center">
+        <Grid item xs={12} sm={4} md={8}>
+          <Grid container spacing={2}>
+            {IMAGE_DATA.map((item, index) => (
+              <Grid item key={index}>
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  width={300}
+                  height={300}
+                  style={{ borderRadius: "10px" }}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Button message="Вижте още дизайни" sx={{ mt: "2rem" }} />
+    </Stack>
+  );
+};
+
+export default HomeGalery;
