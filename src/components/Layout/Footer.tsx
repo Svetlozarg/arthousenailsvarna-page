@@ -31,8 +31,13 @@ const Footer = () => {
           </Typography>
 
           <Stack direction="row" gap={1}>
-            <LocalPhoneIcon />
-            <Typography component="p" variant="h3" maxWidth="400px">
+            <LocalPhoneIcon sx={{ color: "primary.main" }} />
+            <Typography
+              component="p"
+              variant="h3"
+              maxWidth="400px"
+              color="primary.main"
+            >
               087 635 3458
             </Typography>
           </Stack>

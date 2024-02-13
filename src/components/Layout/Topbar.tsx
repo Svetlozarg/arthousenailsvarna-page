@@ -1,28 +1,37 @@
 "use client";
-import { AppBar, Toolbar, IconButton, Stack, Typography } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Toolbar, Stack, Typography } from "@mui/material";
 import Logo from "./Logo";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Drawer from "./Drawer";
+import HomeIcon from "@mui/icons-material/Home";
+import BrushIcon from "@mui/icons-material/Brush";
+import CollectionsIcon from "@mui/icons-material/Collections";
+import GroupsIcon from "@mui/icons-material/Groups";
+import ContactsIcon from "@mui/icons-material/Contacts";
 
-const PAGES_DATA = [
+export const PAGES_DATA = [
   {
     title: "Начало",
     link: "/",
+    icon: <HomeIcon sx={{ color: "secondary.main" }} />,
   },
   {
     title: "Услуги",
     link: "/services",
+    icon: <BrushIcon sx={{ color: "secondary.main" }} />,
   },
   {
     title: "Галерия",
     link: "/gallery",
+    icon: <CollectionsIcon sx={{ color: "secondary.main" }} />,
   },
   {
     title: "За нас",
     link: "/about",
+    icon: <GroupsIcon sx={{ color: "secondary.main" }} />,
   },
   // {
   //   title: "Резервации",
@@ -31,6 +40,7 @@ const PAGES_DATA = [
   {
     title: "Контакти",
     link: "/contacts",
+    icon: <ContactsIcon sx={{ color: "secondary.main" }} />,
   },
   // {
   //   title: "ЧЗВ",
@@ -49,16 +59,7 @@ const Topbar = () => {
       <Stack px={2}>
         <Toolbar disableGutters>
           <Logo />
-          <IconButton
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-              justifyContent: "flex-end",
-            }}
-            disableRipple
-          >
-            <MenuIcon />
-          </IconButton>
+          <Drawer />
 
           <Stack
             direction="row"
