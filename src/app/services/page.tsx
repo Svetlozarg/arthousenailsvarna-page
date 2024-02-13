@@ -1,5 +1,6 @@
 "use client";
 import ServicesPriceList from "@/components/PageComponents/Services/ServicesPriceList";
+import InstagramGiftCardsSection from "@/components/SmallComponents/InstagramGiftCardsSection";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack } from "@mui/material";
 
@@ -26,6 +27,8 @@ const ServicesPage = () => {
       >
         <ServicesPriceList />
       </Stack>
+
+      <InstagramGiftCardsSection />
     </Stack>
   );
 };

@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import PushPinIcon from "@mui/icons-material/PushPin";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Link from "next/link";
+import LocalParkingIcon from "@mui/icons-material/LocalParking";
 
 const CONTACTS_DATA = [
   {
@@ -133,6 +134,7 @@ const ContactsPage = () => {
             justifyContent="center"
             alignItems="center"
             gap={1}
+            px={2}
           >
             <PushPinIcon sx={{ color: "secondary.main" }} />
             <Typography>
@@ -144,8 +146,23 @@ const ContactsPage = () => {
             direction="row"
             justifyContent="center"
             alignItems="center"
+            gap={1}
+            px={2}
+          >
+            <LocalParkingIcon sx={{ color: "secondary.main" }} />
+            <Typography>
+              Чайка Център има безплатен паркинг за всички клиенти на салона до
+              1 час
+            </Typography>
+          </Stack>
+
+          <Stack
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
             mb={4}
             gap={1}
+            px={2}
           >
             <AccessTimeIcon sx={{ color: "secondary.main" }} />
             <Typography>Вторник - Събота: 09:30 ч. - 19:00 ч.</Typography>

@@ -27,11 +27,17 @@ const HomeHero = () => {
           variant="h3"
           textTransform="uppercase"
           color="primary.main"
+          textAlign="center"
         >
           ArtHouse Nails Varna
         </Typography>
-        <Typography component="h2" variant="h1" color="common.white">
-          Вашето арт място за вашите нокти
+        <Typography
+          component="h2"
+          variant="h1"
+          color="common.white"
+          textAlign="center"
+        >
+          Мястото, където ноктите стават изкуство
         </Typography>
         <Button message="Резервирай час" />
       </Stack>

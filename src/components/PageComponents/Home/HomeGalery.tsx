@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/MUIComponents/Button";
-import { Grid, Stack, Typography, useTheme } from "@mui/material";
+import { Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 
 const IMAGE_DATA = [
@@ -57,7 +57,7 @@ const HomeGalery = () => {
       }}
     >
       <Typography component="h4" variant="h4" color="common.white" mb={2}>
-        Наши Дизайни
+        Ние сме тук, за да ви помогнем да изберете най-добрия дизайн за вас
       </Typography>
       <Typography
         component="h2"
@@ -73,26 +73,29 @@ const HomeGalery = () => {
         }}
         mb={6}
       >
-        Спрете времето. Останете красиви
+        Отношение и внимание към детайла
       </Typography>
 
-      <Grid container justifyContent="center">
-        <Grid item xs={12} sm={4} md={8}>
-          <Grid container spacing={2}>
-            {IMAGE_DATA.map((item, index) => (
-              <Grid item key={index}>
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  width={300}
-                  height={300}
-                  style={{ borderRadius: "10px" }}
-                />
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
-      </Grid>
+      <Stack
+        width="100%"
+        maxWidth="1400px"
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        flexWrap="wrap"
+        gap={2}
+      >
+        {IMAGE_DATA.map((item, index) => (
+          <Image
+            key={index}
+            src={item.img}
+            alt={item.title}
+            width={300}
+            height={300}
+            style={{ borderRadius: "10px" }}
+          />
+        ))}
+      </Stack>
 
       <Button message="Вижте още дизайни" sx={{ mt: "2rem" }} />
     </Stack>

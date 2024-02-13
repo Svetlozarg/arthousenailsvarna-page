@@ -4,12 +4,13 @@ import Image from "next/image";
 
 const HomeWorkingHours = () => {
   return (
-    <Stack justifyContent="center" alignItems="center" py={10}>
+    <Stack justifyContent="center" alignItems="center" py={10} px={2}>
       <Stack
         direction="row"
         justifyContent="center"
         alignItems="center"
         gap={4}
+        flexWrap="wrap"
       >
         <Stack gap={2}>
           <Typography component="p" variant="h4" color="secondary.main">
@@ -31,7 +32,12 @@ const HomeWorkingHours = () => {
           alt="nail polish image"
           width={500}
           height={500}
-          style={{ width: "500px", height: "auto" }}
+          style={{
+            width: "100%",
+            maxWidth: "500px",
+            height: "auto",
+            objectFit: "cover",
+          }}
         />
       </Stack>
 
@@ -42,6 +48,7 @@ const HomeWorkingHours = () => {
         alignItems="center"
         gap={4}
         mt={10}
+        flexWrap="wrap"
       >
         <iframe
           style={{ width: "600px", height: "400px", borderRadius: "10px" }}
