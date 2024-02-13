@@ -4,8 +4,15 @@ import AboutTeam from "@/components/PageComponents/About/AboutTeam";
 import InstagramGiftCardsSection from "@/components/SmallComponents/InstagramGiftCardsSection";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack } from "@mui/material";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const AboutPage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <Stack overflow="hidden">
       <PageHeader

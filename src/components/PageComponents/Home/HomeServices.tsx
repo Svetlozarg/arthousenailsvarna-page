@@ -65,6 +65,7 @@ const HomeServices = () => {
           m: "0 auto 4rem auto",
           textAlign: "center",
         }}
+        data-aos="zoom-in"
       >
         Какво ви очаква в нашия салон
       </Typography>
@@ -83,6 +84,7 @@ const HomeServices = () => {
             maxWidth="300px"
             alignItems="center"
             gap={2}
+            data-aos="flip-left"
           >
             <Image
               src={service.icon}
@@ -135,6 +137,7 @@ const HomeServices = () => {
                 borderRadius: "10px",
                 objectFit: "cover",
               }}
+              data-aos="flip-left"
             />
 
             <Stack
@@ -143,6 +146,7 @@ const HomeServices = () => {
               gap={4}
               justifyContent="center"
               alignItems={index === 1 ? "flex-end" : "flex-start"}
+              data-aos="fade"
             >
               <Typography
                 component="p"

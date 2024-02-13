@@ -1,10 +1,17 @@
 "use client";
+import { useEffect } from "react";
 import ServicesPriceList from "@/components/PageComponents/Services/ServicesPriceList";
 import InstagramGiftCardsSection from "@/components/SmallComponents/InstagramGiftCardsSection";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack } from "@mui/material";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ServicesPage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <Stack justifyContent="center" alignItems="center" overflow="hidden">
       <PageHeader

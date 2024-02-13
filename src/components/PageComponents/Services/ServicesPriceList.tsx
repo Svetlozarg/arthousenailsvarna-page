@@ -156,7 +156,7 @@ const ServicesPriceList = () => {
   return (
     <Grid width="100%" maxWidth="90rem" container spacing={10} py={10} px={10}>
       {PRICE_LIST_DATA.map((section, index) => (
-        <Grid item key={index} xs={12} sm={6}>
+        <Grid item key={index} xs={12} sm={6} data-aos="flip-right">
           <Typography
             component="h2"
             variant="h2"

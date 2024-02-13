@@ -1,5 +1,5 @@
 import Button from "@/components/MUIComponents/Button";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 
 const HomeHero = () => {
   return (
@@ -28,6 +28,7 @@ const HomeHero = () => {
           textTransform="uppercase"
           color="primary.main"
           textAlign="center"
+          data-aos="slide-down"
         >
           ArtHouse Nails Varna
         </Typography>
@@ -36,10 +37,14 @@ const HomeHero = () => {
           variant="h1"
           color="common.white"
           textAlign="center"
+          data-aos="fade"
         >
           Мястото, където ноктите стават изкуство
         </Typography>
-        <Button message="Резервирай час" />
+
+        <Box data-aos="slide-up">
+          <Button message="Резервирай час" />
+        </Box>
       </Stack>
     </Stack>
   );

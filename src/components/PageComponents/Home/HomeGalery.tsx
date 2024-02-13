@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/MUIComponents/Button";
-import { Stack, Typography, useTheme } from "@mui/material";
+import { Box, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 
 const IMAGE_DATA = [
@@ -56,7 +56,13 @@ const HomeGalery = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <Typography component="h4" variant="h4" color="common.white" mb={2}>
+      <Typography
+        component="h4"
+        variant="h4"
+        color="common.white"
+        mb={2}
+        data-aos="zoom-in"
+      >
         Ние сме тук, за да ви помогнем да изберете най-добрия дизайн за вас
       </Typography>
       <Typography
@@ -72,6 +78,7 @@ const HomeGalery = () => {
           textAlign: "center",
         }}
         mb={6}
+        data-aos="zoom-in"
       >
         Отношение и внимание към детайла
       </Typography>
@@ -93,11 +100,14 @@ const HomeGalery = () => {
             width={300}
             height={300}
             style={{ borderRadius: "10px" }}
+            data-aos="flip-up"
           />
         ))}
       </Stack>
 
-      <Button message="Вижте още дизайни" sx={{ mt: "2rem" }} />
+      <Box data-aos="slide-up">
+        <Button message="Вижте още дизайни" sx={{ mt: "2rem" }} />
+      </Box>
     </Stack>
   );
 };

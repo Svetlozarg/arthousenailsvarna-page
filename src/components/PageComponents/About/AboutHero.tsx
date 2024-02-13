@@ -14,7 +14,7 @@ const AboutHero = () => {
         flexWrap="wrap"
         py={6}
       >
-        <Stack width="100%" maxWidth="600px">
+        <Stack width="100%" maxWidth="600px" data-aos="fade">
           <Typography component="h4" variant="h5" color="primary.main">
             ARTHOUSE NAILS VARNA
           </Typography>
@@ -59,6 +59,7 @@ const AboutHero = () => {
             height: "auto",
             objectFit: "cover",
           }}
+          data-aos="flip-left"
         />
       </Stack>
 
@@ -77,6 +78,7 @@ const AboutHero = () => {
           borderRadius: 10,
           mt: 6,
         }}
+        data-aos="fade"
       >
         <Typography component="h4" variant="h2" color="primary.main" mb={4}>
           Нашата мисия

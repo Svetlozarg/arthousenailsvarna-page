@@ -8,6 +8,9 @@ import PushPinIcon from "@mui/icons-material/PushPin";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Link from "next/link";
 import LocalParkingIcon from "@mui/icons-material/LocalParking";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const CONTACTS_DATA = [
   {
@@ -33,6 +36,10 @@ const CONTACTS_DATA = [
 const ContactsPage = () => {
   const theme = useTheme();
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <Stack justifyContent="center" alignItems="center">
       <PageHeader
@@ -41,11 +48,23 @@ const ContactsPage = () => {
       />
 
       <Stack justifyContent="center" alignItems="center" px={2} py={8} mb={6}>
-        <Typography component="h3" variant="h4" textAlign="center" mb={4}>
+        <Typography
+          component="h3"
+          variant="h4"
+          textAlign="center"
+          mb={4}
+          data-aos="fade"
+        >
           Ако имате въпроси, не се колебайте да се свържете с нас. Ние сме тук,
           за да ви помогнем!
         </Typography>
-        <Typography component="h3" variant="h4" textAlign="center" mb={6}>
+        <Typography
+          component="h3"
+          variant="h4"
+          textAlign="center"
+          mb={6}
+          data-aos="fade"
+        >
           Ако искате да си запазите час, моля свържете се с нас като ни се
           обадите или ни пишете в нашите социални мрежи!
         </Typography>
@@ -62,6 +81,7 @@ const ContactsPage = () => {
             m: "0 auto 3rem auto",
             textAlign: "center",
           }}
+          data-aos="zoom-in"
         >
           Нашите социални мрежи
         </Typography>
@@ -85,6 +105,7 @@ const ContactsPage = () => {
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "white",
               }}
+              data-aos="flip-left"
             >
               {contact.icon}
               <Stack justifyContent="center" alignItems="center" gap={1}>
@@ -124,6 +145,7 @@ const ContactsPage = () => {
             m: "0 auto 3rem auto",
             textAlign: "center",
           }}
+          data-aos="zoom-in"
         >
           Къде се намираме
         </Typography>
@@ -135,6 +157,7 @@ const ContactsPage = () => {
             alignItems="center"
             gap={1}
             px={2}
+            data-aos="slide-left"
           >
             <PushPinIcon sx={{ color: "secondary.main" }} />
             <Typography>
@@ -148,6 +171,7 @@ const ContactsPage = () => {
             alignItems="center"
             gap={1}
             px={2}
+            data-aos="slide-right"
           >
             <LocalParkingIcon sx={{ color: "secondary.main" }} />
             <Typography>
@@ -163,6 +187,7 @@ const ContactsPage = () => {
             mb={4}
             gap={1}
             px={2}
+            data-aos="slide-left"
           >
             <AccessTimeIcon sx={{ color: "secondary.main" }} />
             <Typography>Вторник - Събота: 09:30 ч. - 19:00 ч.</Typography>

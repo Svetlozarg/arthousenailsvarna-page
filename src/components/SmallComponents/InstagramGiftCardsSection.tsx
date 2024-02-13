@@ -29,6 +29,7 @@ const InstagramGiftCardsSection = () => {
         }}
         gap={4}
         p={{ xs: 10, md: 4 }}
+        data-aos="slide-right"
       >
         <Typography component="h4" variant="h3" textAlign="center">
           Последвайте ни в Instagram
@@ -58,6 +59,7 @@ const InstagramGiftCardsSection = () => {
           borderBottomLeftRadius: { xs: 0, md: 10 },
         }}
         p={{ xs: 10, md: 4 }}
+        data-aos="slide-left"
       >
         <Typography
           component="h4"

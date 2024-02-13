@@ -18,6 +18,7 @@ const AboutTeam = () => {
           m: "0 auto 4rem auto",
           textAlign: "center",
         }}
+        data-aos="zoom-in"
       >
         Нашият Екип
       </Typography>
@@ -45,9 +46,10 @@ const AboutTeam = () => {
             objectFit: "cover",
             border: `3px solid ${theme.palette.secondary.main}`,
           }}
+          data-aos="flip-right"
         />
 
-        <Stack width="100%" maxWidth="800px" gap={2}>
+        <Stack width="100%" maxWidth="800px" gap={2} data-aos="fade">
           <Typography component="h3" variant="h3" color="secondary.main">
             Пламена
           </Typography>

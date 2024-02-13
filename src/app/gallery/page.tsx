@@ -1,7 +1,10 @@
+"use client";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import PhotoAlbum from "react-photo-album";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const photos = [
   {
@@ -87,6 +90,10 @@ const photos = [
 ];
 
 const GalleryPage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <Stack justifyContent="center" alignItems="center">
       <PageHeader

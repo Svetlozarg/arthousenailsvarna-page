@@ -12,7 +12,7 @@ const HomeWorkingHours = () => {
         gap={4}
         flexWrap="wrap"
       >
-        <Stack gap={2}>
+        <Stack gap={2} data-aos="fade">
           <Typography component="p" variant="h4" color="secondary.main">
             Свежи, Блестящи, Ярки
           </Typography>
@@ -38,6 +38,7 @@ const HomeWorkingHours = () => {
             height: "auto",
             objectFit: "cover",
           }}
+          data-aos="flip-left"
         />
       </Stack>
 
@@ -62,17 +63,38 @@ const HomeWorkingHours = () => {
           alignItems="center"
           gap={2}
         >
-          <Typography component="p" variant="h4" color="secondary.main">
+          <Typography
+            component="p"
+            variant="h4"
+            color="secondary.main"
+            data-aos="slide-left"
+          >
             Вторник - Събота
           </Typography>
-          <Typography component="h4" variant="h2" color="primary.main">
+          <Typography
+            component="h4"
+            variant="h2"
+            color="primary.main"
+            data-aos="slide-left"
+          >
             09:30 ч. - 19:00 ч.
           </Typography>
 
-          <Typography component="p" variant="h4" color="secondary.main" mt={4}>
+          <Typography
+            component="p"
+            variant="h4"
+            color="secondary.main"
+            mt={4}
+            data-aos="slide-left"
+          >
             Неделя - Понеделник
           </Typography>
-          <Typography component="h4" variant="h2" color="primary.main">
+          <Typography
+            component="h4"
+            variant="h2"
+            color="primary.main"
+            data-aos="slide-left"
+          >
             Почивен ден
           </Typography>
         </Stack>
