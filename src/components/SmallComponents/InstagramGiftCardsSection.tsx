@@ -1,8 +1,12 @@
+"use client";
 import { Stack, Typography } from "@mui/material";
 import Button from "../MUIComponents/Button";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const InstagramGiftCardsSection = () => {
+  const router = useRouter();
+
   return (
     <Stack
       width="100%"
@@ -29,7 +33,7 @@ const InstagramGiftCardsSection = () => {
         }}
         gap={4}
         p={{ xs: 10, md: 4 }}
-        data-aos="slide-right"
+        data-aos="fade-right"
       >
         <Typography component="h4" variant="h3" textAlign="center">
           Последвайте ни в Instagram
@@ -59,7 +63,7 @@ const InstagramGiftCardsSection = () => {
           borderBottomLeftRadius: { xs: 0, md: 10 },
         }}
         p={{ xs: 10, md: 4 }}
-        data-aos="slide-left"
+        data-aos="fade-left"
       >
         <Typography
           component="h4"
@@ -88,11 +92,14 @@ const InstagramGiftCardsSection = () => {
           color="common.white"
           textAlign="center"
         >
-          Всяко 6-то посещение ви носи 50% отстъпка за процедура маникюр или
+          Всяко 6-то посещение ви носи 25% отстъпка за процедура маникюр или
           педикюр.
         </Typography>
 
-        <Button message="Научете Повече" />
+        <Button
+          message="Научете Повече"
+          onClick={() => router.push("/loyalty", { scroll: true })}
+        />
       </Stack>
     </Stack>
   );

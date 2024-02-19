@@ -80,7 +80,7 @@ const HomeGalery = () => {
         mb={6}
         data-aos="zoom-in"
       >
-        Отношение и внимание към детайла
+        Разгледайте за повече вдъхновение
       </Typography>
 
       <Stack

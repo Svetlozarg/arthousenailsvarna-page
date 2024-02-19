@@ -174,10 +174,7 @@ const ContactsPage = () => {
             data-aos="slide-right"
           >
             <LocalParkingIcon sx={{ color: "secondary.main" }} />
-            <Typography>
-              Чайка Център има безплатен паркинг за всички клиенти на салона до
-              1 час
-            </Typography>
+            <Typography>Подземен паркинг</Typography>
           </Stack>
 
           <Stack

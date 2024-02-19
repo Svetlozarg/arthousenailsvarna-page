@@ -13,17 +13,15 @@ const HomeWorkingHours = () => {
         flexWrap="wrap"
       >
         <Stack gap={2} data-aos="fade">
-          <Typography component="p" variant="h4" color="secondary.main">
-            Свежи, Блестящи, Ярки
-          </Typography>
           <Typography
             width="100%"
             maxWidth="600px"
             component="h4"
-            variant="h2"
+            variant="h3"
             color="primary.main"
           >
-            Направете деня си блестящ с лъскавите си нокти
+            Създайте перфектен маникюр, който говори за вашата уникалност и
+            стил!
           </Typography>
         </Stack>
 

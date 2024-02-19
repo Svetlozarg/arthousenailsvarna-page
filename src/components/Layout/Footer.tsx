@@ -57,7 +57,7 @@ const Footer = () => {
             </Stack>
             <Stack direction="row" gap={1}>
               <LocalParkingIcon sx={{ color: "secondary.main" }} />
-              <Typography>Безплатен паркинг до 1 час</Typography>
+              <Typography>Подземен паркинг</Typography>
             </Stack>
             <Stack direction="row" gap={1}>
               <AccessTimeIcon sx={{ color: "secondary.main" }} />
