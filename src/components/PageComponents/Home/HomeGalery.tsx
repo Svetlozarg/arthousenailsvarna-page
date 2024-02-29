@@ -53,7 +53,6 @@ const HomeGalery = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        backgroundAttachment: "fixed",
       }}
     >
       <Typography

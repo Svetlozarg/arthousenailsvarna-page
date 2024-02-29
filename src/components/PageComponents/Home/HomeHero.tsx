@@ -12,7 +12,6 @@ const HomeHero = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
         backgroundSize: "cover",
-        backgroundAttachment: "fixed",
       }}
     >
       <Stack

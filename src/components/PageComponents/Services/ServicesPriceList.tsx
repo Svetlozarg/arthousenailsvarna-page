@@ -154,7 +154,14 @@ const ServicesPriceList = () => {
   const theme = useTheme();
 
   return (
-    <Grid width="100%" maxWidth="90rem" container spacing={10} py={10} px={10}>
+    <Grid
+      width="100%"
+      maxWidth="90rem"
+      container
+      spacing={10}
+      py={10}
+      px={{ sm: 0, md: 10 }}
+    >
       {PRICE_LIST_DATA.map((section, index) => (
         <Grid item key={index} xs={12} sm={6} data-aos="flip-right">
           <Typography

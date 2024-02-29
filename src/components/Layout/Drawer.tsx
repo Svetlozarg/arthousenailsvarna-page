@@ -41,7 +41,7 @@ export default function Drawer() {
         }}
         disableRipple
       >
-        <MenuIcon sx={{ color: "common.black" }} />
+        <MenuIcon sx={{ color: "common.white" }} />
       </IconButton>
 
       <MUIDrawer anchor={"right"} open={open} onClose={toggleDrawer(false)}>

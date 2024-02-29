@@ -18,7 +18,6 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle, image }) => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "bottom center",
-        backgroundAttachment: "fixed",
       }}
     >
       <Typography component="h2" variant="h2" color="white">

@@ -61,38 +61,17 @@ const HomeWorkingHours = () => {
           alignItems="center"
           gap={2}
         >
-          <Typography
-            component="p"
-            variant="h4"
-            color="secondary.main"
-            data-aos="slide-left"
-          >
+          <Typography component="p" variant="h4" color="secondary.main">
             Вторник - Събота
           </Typography>
-          <Typography
-            component="h4"
-            variant="h2"
-            color="primary.main"
-            data-aos="slide-left"
-          >
+          <Typography component="h4" variant="h2" color="primary.main">
             09:30 ч. - 19:00 ч.
           </Typography>
 
-          <Typography
-            component="p"
-            variant="h4"
-            color="secondary.main"
-            mt={4}
-            data-aos="slide-left"
-          >
+          <Typography component="p" variant="h4" color="secondary.main" mt={4}>
             Неделя - Понеделник
           </Typography>
-          <Typography
-            component="h4"
-            variant="h2"
-            color="primary.main"
-            data-aos="slide-left"
-          >
+          <Typography component="h4" variant="h2" color="primary.main">
             Почивен ден
           </Typography>
         </Stack>

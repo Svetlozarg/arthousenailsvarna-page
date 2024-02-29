@@ -157,7 +157,6 @@ const ContactsPage = () => {
             alignItems="center"
             gap={1}
             px={2}
-            data-aos="slide-left"
           >
             <PushPinIcon sx={{ color: "secondary.main" }} />
             <Typography>
@@ -171,7 +170,6 @@ const ContactsPage = () => {
             alignItems="center"
             gap={1}
             px={2}
-            data-aos="slide-right"
           >
             <LocalParkingIcon sx={{ color: "secondary.main" }} />
             <Typography>Подземен паркинг</Typography>
@@ -184,7 +182,6 @@ const ContactsPage = () => {
             mb={4}
             gap={1}
             px={2}
-            data-aos="slide-left"
           >
             <AccessTimeIcon sx={{ color: "secondary.main" }} />
             <Typography>Вторник - Събота: 09:30 ч. - 19:00 ч.</Typography>

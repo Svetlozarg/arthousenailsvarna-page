@@ -70,13 +70,7 @@ const HomeServices = () => {
         Какво ви очаква в нашия салон
       </Typography>
 
-      <Stack
-        direction="row"
-        justifyContent="center"
-        spacing={4}
-        flexWrap="wrap"
-        gap={2}
-      >
+      <Stack direction="row" justifyContent="center" flexWrap="wrap" gap={2}>
         {HOME_SERVICES_DATA.map((service, index) => (
           <Stack
             key={index}

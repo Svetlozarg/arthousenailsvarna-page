@@ -74,9 +74,9 @@ const AboutHero = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center center",
-          backgroundAttachment: "fixed",
           borderRadius: 10,
           mt: 6,
+          px: 1,
         }}
         data-aos="fade"
       >
