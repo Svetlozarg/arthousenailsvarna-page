@@ -1,7 +1,10 @@
 import Button from "@/components/MUIComponents/Button";
 import { Box, Stack, Typography } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const HomeHero = () => {
+  const router = useRouter();
+
   return (
     <Stack
       width="100vw"
@@ -42,7 +45,10 @@ const HomeHero = () => {
         </Typography>
 
         <Box data-aos="slide-up">
-          <Button message="Резервирай час" />
+          <Button
+            message="Резервирай час"
+            onClick={() => router.push("/contacts", { scroll: true })}
+          />
         </Box>
       </Stack>
     </Stack>

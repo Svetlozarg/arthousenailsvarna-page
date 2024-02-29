@@ -20,22 +20,6 @@ const IMAGE_DATA = [
     img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1615140560683-E4XPHODZJSBUMYF1MSQA/image-asset.jpeg?format=500w",
     title: "Image",
   },
-  {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1614045601785-56GNOQPPTZIQSL3YWJHA/image-asset.jpeg?format=500w",
-    title: "Image",
-  },
-  {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1612664058252-8C0K9TASWKU4XAGGV3J4/image-asset.jpeg?format=500w",
-    title: "Image",
-  },
-  {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1614045601785-56GNOQPPTZIQSL3YWJHA/image-asset.jpeg?format=500w",
-    title: "Image",
-  },
-  {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1612664058252-8C0K9TASWKU4XAGGV3J4/image-asset.jpeg?format=500w",
-    title: "Image",
-  },
 ];
 
 const HomeGalery = () => {
@@ -90,6 +74,7 @@ const HomeGalery = () => {
         alignItems="center"
         flexWrap="wrap"
         gap={2}
+        py={4}
       >
         {IMAGE_DATA.map((item, index) => (
           <Image
@@ -104,7 +89,7 @@ const HomeGalery = () => {
         ))}
       </Stack>
 
-      <Box data-aos="slide-up">
+      <Box>
         <Button message="Вижте още дизайни" sx={{ mt: "2rem" }} />
       </Box>
     </Stack>
