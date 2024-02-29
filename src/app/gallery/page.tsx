@@ -2,25 +2,58 @@
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-import PhotoAlbum from "react-photo-album";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import Image from "next/image";
 
 const photos = [
   {
-    src: "https://i.pinimg.com/564x/10/54/79/105479c1d7a44ea2a36934842dc7b225.jpg",
-    width: 300,
-    height: 300,
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0083_DgvYyildr.HEIC?updatedAt=1709220879288",
   },
   {
-    src: "https://i.pinimg.com/564x/c9/be/d8/c9bed8e809ef2105cd20f1c6b2f2a0ba.jpg",
-    width: 300,
-    height: 400,
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_9709_UKRgj7pJ-.JPG?updatedAt=1709220877447",
   },
   {
-    src: "https://i.pinimg.com/564x/46/10/2e/46102ee00cd5fbe9dc85b973e00129e3.jpg",
-    width: 400,
-    height: 500,
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0254_Wj3OvFeX1.JPG?updatedAt=1709220874076",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0131_6b4Gtp5wVy.HEIC?updatedAt=1709220878992",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_6885_SmDcGGqjA.HEIC?updatedAt=1709220878445",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_7558_hjYx1V6QS.HEIC?updatedAt=1709220878345",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_8404_-zIbukI99.HEIC?updatedAt=1709220878282",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_6168_1YGzRGvz3.HEIC?updatedAt=1709220877457",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_5337_9o-dEFVDW.HEIC?updatedAt=1709220876251",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_5152_FbkEfIoTV.HEIC?updatedAt=1709220876028",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_3105_-_anE0U0I.HEIC?updatedAt=1709220875023",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_4852_J7SyPQaKm.HEIC?updatedAt=1709220874989",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_2839_CZJWwoJwF.HEIC?updatedAt=1709220874964",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_4879_WlWyBU0TyE.HEIC?updatedAt=1709220874980",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_4605_03Zsh8Yce.HEIC?updatedAt=1709220874728",
+  },
+  {
+    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0159_k3yh9lrAT.HEIC?updatedAt=1709220874365",
   },
 ];
 
@@ -42,13 +75,31 @@ const GalleryPage = () => {
         </Typography>
 
         <Stack p={5}>
-          <PhotoAlbum
-            layout="columns"
-            spacing={10}
-            padding={0}
-            columns={4}
-            photos={photos}
-          />
+          <Stack
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            flexWrap="wrap"
+            gap={2}
+          >
+            {photos.map((photo, index) => {
+              return (
+                <Image
+                  key={index}
+                  src={photo.src}
+                  alt={`${index}`}
+                  width={400}
+                  height={400}
+                  style={{
+                    width: "400px",
+                    height: "400px",
+                    objectFit: "cover",
+                    borderRadius: "10px",
+                  }}
+                />
+              );
+            })}
+          </Stack>
         </Stack>
       </Stack>
     </Stack>

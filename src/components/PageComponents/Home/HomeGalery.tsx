@@ -2,28 +2,30 @@
 import Button from "@/components/MUIComponents/Button";
 import { Box, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const IMAGE_DATA = [
   {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1615140560683-E4XPHODZJSBUMYF1MSQA/image-asset.jpeg?format=500w",
+    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0254_Wj3OvFeX1.JPG?updatedAt=1709220874076",
     title: "Image",
   },
   {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1614045601785-56GNOQPPTZIQSL3YWJHA/image-asset.jpeg?format=500w",
+    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0083_DgvYyildr.HEIC?updatedAt=1709220879288",
     title: "Image",
   },
   {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1612664058252-8C0K9TASWKU4XAGGV3J4/image-asset.jpeg?format=500w",
+    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0144_gxD6d7js5.HEIC?updatedAt=1709220879610",
     title: "Image",
   },
   {
-    img: "https://images.squarespace-cdn.com/content/v1/5f834a0c50899866fcb93a61/1615140560683-E4XPHODZJSBUMYF1MSQA/image-asset.jpeg?format=500w",
+    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_9709_UKRgj7pJ-.JPG?updatedAt=1709220877447",
     title: "Image",
   },
 ];
 
 const HomeGalery = () => {
   const theme = useTheme();
+  const router = useRouter();
 
   return (
     <Stack
@@ -83,14 +85,23 @@ const HomeGalery = () => {
             alt={item.title}
             width={300}
             height={300}
-            style={{ borderRadius: "10px" }}
+            style={{
+              borderRadius: "10px",
+              width: "300px",
+              height: "300px",
+              objectFit: "cover",
+            }}
             data-aos="flip-up"
           />
         ))}
       </Stack>
 
       <Box>
-        <Button message="Вижте още дизайни" sx={{ mt: "2rem" }} />
+        <Button
+          message="Вижте още дизайни"
+          sx={{ mt: "2rem" }}
+          onClick={() => router.push("/gallery", { scroll: true })}
+        />
       </Box>
     </Stack>
   );

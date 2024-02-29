@@ -36,7 +36,7 @@ const HOME_SERVICES_SECOND_DATA = [
     description:
       "Предлагаме ви разнообразие от услуги, които ще ви помогнат да поддържате красиви и здрави нокти. Ние ви предлагаме най-подходящите техники и продукти, за да се насладите на перфектни резултати.",
     image:
-      "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/04/gel_nail_manicure_stiletto_set_1296x728_header-1024x575.jpg",
+      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_7185_jli866bJS.HEIC?updatedAt=1709220876970",
   },
   {
     slogan: "Релаксираща грижа за краката ви",
@@ -44,7 +44,15 @@ const HOME_SERVICES_SECOND_DATA = [
     description:
       "Отпуснете се и се насладете на релаксиращ педикюр, който ще освежи и подмлади вашите крака. Ние ще се погрижим за всеки детайл, осигурявайки ви усещане за комфорт и добре балансирана грижа.",
     image:
-      "https://thebeautyinstitute.edu/wp-content/uploads/2022/08/pedicure.jpg",
+      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_5579_jTnF3OTsW.HEIC?updatedAt=1709220876587",
+  },
+  {
+    slogan: "Изключително качество и стерилност",
+    title: "Стерилна Среда",
+    description:
+      "В нашия салон отдаваме изключително значение на стерилността и хигиената. Нашата цел е да осигурим безопасна и здравословна среда за нашите клиенти. Следователно, извършваме редовни процедури за почистване и стерилизация на всички инструменти и работни повърхности. Вярваме, че само в чиста и стерилна среда може да се постигне най-доброто качество на услугите, като същевременно се гарантира безопасността и комфортът на нашите клиенти.",
+    image:
+      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/FA788D37-5AA0-40B3-BC9E-3D222C4A0CFD_ppN1B-O9KV.jpg?updatedAt=1709220878616",
   },
 ];
 
@@ -117,7 +125,7 @@ const HomeServices = () => {
             alignItems="center"
             gap={6}
             my={4}
-            flexWrap="wrap"
+            flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap" }}
           >
             <Image
               src={service.image}
@@ -126,7 +134,7 @@ const HomeServices = () => {
               height={400}
               style={{
                 width: "100%",
-                maxWidth: "600px",
+                maxWidth: "800px",
                 height: "400px",
                 borderRadius: "10px",
                 objectFit: "cover",

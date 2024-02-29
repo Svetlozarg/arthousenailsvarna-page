@@ -53,32 +53,17 @@ const LoyaltyPage = () => {
           mt={10}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/700x900_2_cYDNOeyPu.jpg?updatedAt=1707819951085"
+            src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0387_5CtJw0Pqt.HEIC?updatedAt=1709220875020"
             alt="Image that shows who we are"
             width="500"
             height="300"
             style={{
               borderRadius: 10,
               width: "100%",
-              maxWidth: "450px",
-              height: "300px",
+              maxWidth: "1000px",
+              height: "600px",
               objectFit: "cover",
             }}
-            data-aos="flip-left"
-          />
-          <Image
-            src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/700x900_2_cYDNOeyPu.jpg?updatedAt=1707819951085"
-            alt="Image that shows who we are"
-            width="500"
-            height="400"
-            style={{
-              borderRadius: 10,
-              width: "100%",
-              maxWidth: "450px",
-              height: "300px",
-              objectFit: "cover",
-            }}
-            data-aos="flip-left"
           />
         </Stack>
       </Stack>

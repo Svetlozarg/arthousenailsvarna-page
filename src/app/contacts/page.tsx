@@ -44,7 +44,7 @@ const ContactsPage = () => {
     <Stack justifyContent="center" alignItems="center">
       <PageHeader
         title="Свържете се с нас"
-        image="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/hero_93J8zaZzP.jpeg?updatedAt=1707491914595"
+        image="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0406__ycw7dTJki.HEIC?updatedAt=1709220874955"
       />
 
       <Stack justifyContent="center" alignItems="center" px={2} py={8} mb={6}>

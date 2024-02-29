@@ -1,5 +1,5 @@
 import { Stack, Typography, useTheme } from "@mui/material";
-import Image from "next/image";
+// import Image from "next/image";
 
 const AboutHero = () => {
   const theme = useTheme();
@@ -14,7 +14,7 @@ const AboutHero = () => {
         flexWrap="wrap"
         py={6}
       >
-        <Stack width="100%" maxWidth="600px" data-aos="fade">
+        <Stack width="100%" maxWidth="1200px" data-aos="fade" gap={2}>
           <Typography component="h4" variant="h5" color="primary.main">
             ARTHOUSE NAILS VARNA
           </Typography>
@@ -47,8 +47,8 @@ const AboutHero = () => {
           </Typography>
         </Stack>
 
-        <Image
-          src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/700x900_2_cYDNOeyPu.jpg?updatedAt=1707819951085"
+        {/* <Image
+          src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png?updatedAt=1709223268165"
           alt="Image that shows who we are"
           width="500"
           height="400"
@@ -56,21 +56,22 @@ const AboutHero = () => {
             borderRadius: 10,
             width: "100%",
             maxWidth: "450px",
-            height: "auto",
+            height: "500px",
             objectFit: "cover",
+            objectPosition: "center",
           }}
           data-aos="flip-left"
-        />
+        /> */}
       </Stack>
 
       <Stack
         width="100%"
         justifyContent="center"
         alignItems="center"
-        py={12}
+        py={20}
         sx={{
           background:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.squarespace-cdn.com/content/v1/62e6c7b70731e15cb02e68de/1660253804440-KZP04KWFFS4DCCBM8SQI/IMG_0122.jpg')",
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png?updatedAt=1709223268165')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center center",

@@ -4,9 +4,15 @@ interface PageHeaderProps {
   title: string;
   subtitle?: string;
   image: string;
+  position?: string;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle, image }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({
+  title,
+  subtitle,
+  image,
+  position = "center",
+}) => {
   return (
     <Stack
       width="100vw"
@@ -17,7 +23,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle, image }) => {
         background: `linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(${image})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundPosition: "bottom center",
+        backgroundPosition: position,
       }}
     >
       <Typography component="h2" variant="h2" color="white">
