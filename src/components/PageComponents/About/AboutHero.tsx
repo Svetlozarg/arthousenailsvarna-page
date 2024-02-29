@@ -1,5 +1,4 @@
 import { Stack, Typography, useTheme } from "@mui/material";
-// import Image from "next/image";
 
 const AboutHero = () => {
   const theme = useTheme();
