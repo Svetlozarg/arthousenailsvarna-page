@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <Image
-        src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/arthouse_logo_GiWoTdVtm.png?updatedAt=1707491939301"
+        src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/logo_im0ZMZSsM.png?updatedAt=1709301336907"
         width={200}
         height={70}
         alt="logo"
