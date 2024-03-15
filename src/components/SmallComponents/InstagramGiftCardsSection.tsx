@@ -41,6 +41,7 @@ const InstagramGiftCardsSection = () => {
         <Link
           href="https://www.instagram.com/arthouse_nailsvarna/"
           target="_blank"
+          rel="noreferrer"
         >
           <Typography component="p" variant="h2" textAlign="center">
             @arthouse_nailsvarna

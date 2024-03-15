@@ -97,6 +97,7 @@ const Topbar = () => {
             <Link
               href="https://www.instagram.com/arthouse_nailsvarna/"
               target="_blank"
+              rel="noreferrer"
             >
               <InstagramIcon
                 sx={{

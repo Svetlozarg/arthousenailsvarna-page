@@ -109,7 +109,7 @@ const ContactsPage = () => {
                 <Typography component="p" variant="h4" fontWeight="normal">
                   {contact.title}
                 </Typography>
-                <Link href={contact.link} target="_blank">
+                <Link href={contact.link} target="_blank" rel="noreferrer">
                   <Typography
                     component="p"
                     variant="h3"

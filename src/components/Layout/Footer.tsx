@@ -75,6 +75,7 @@ const Footer = () => {
               href="https://www.instagram.com/arthouse_nailsvarna/"
               target="_blank"
               style={{ color: "#000", textDecoration: "none" }}
+              rel="noreferrer"
             >
               <Typography
                 component="p"
@@ -91,6 +92,7 @@ const Footer = () => {
               href="https://www.facebook.com/ArtHouseVarna"
               target="_blank"
               style={{ color: "#000", textDecoration: "none" }}
+              rel="noreferrer"
             >
               <Typography
                 component="p"
@@ -107,6 +109,7 @@ const Footer = () => {
               href=""
               target="_blank"
               style={{ color: "#000", textDecoration: "none" }}
+              rel="noreferrer"
             >
               <Typography
                 component="p"
