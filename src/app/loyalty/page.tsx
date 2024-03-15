@@ -1,11 +1,13 @@
-"use client";
 import PageHeader from "@/components/SmallComponents/PageHeader";
-import { Stack, Typography, useTheme } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
+import { Metadata } from "next";
 import Image from "next/image";
 
-const LoyaltyPage = () => {
-  const theme = useTheme();
+export const metadata: Metadata = {
+  title: "Loyalty Program",
+};
 
+const LoyaltyPage = () => {
   return (
     <Stack>
       <PageHeader
@@ -21,7 +23,7 @@ const LoyaltyPage = () => {
           sx={{
             width: "100%",
             maxWidth: "800px",
-            borderBottom: `3px solid ${theme.palette.primary.main}`,
+            borderColor: "primary.main",
             pb: "1rem",
             m: "0 auto 4rem auto",
             textAlign: "center",

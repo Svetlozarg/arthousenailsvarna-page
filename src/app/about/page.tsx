@@ -1,18 +1,15 @@
-"use client";
 import AboutHero from "@/components/PageComponents/About/AboutHero";
 import AboutTeam from "@/components/PageComponents/About/AboutTeam";
 import InstagramGiftCardsSection from "@/components/SmallComponents/InstagramGiftCardsSection";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack } from "@mui/material";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+};
 
 const AboutPage = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-
   return (
     <Stack overflow="hidden">
       <PageHeader

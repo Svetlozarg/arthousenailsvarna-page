@@ -1,5 +1,4 @@
-"use client";
-import { Stack, Typography, useTheme } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
@@ -9,8 +8,11 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Link from "next/link";
 import LocalParkingIcon from "@mui/icons-material/LocalParking";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import Aos from "aos";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacts",
+};
 
 const CONTACTS_DATA = [
   {
@@ -34,12 +36,6 @@ const CONTACTS_DATA = [
 ];
 
 const ContactsPage = () => {
-  const theme = useTheme();
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-
   return (
     <Stack justifyContent="center" alignItems="center">
       <PageHeader
@@ -76,7 +72,8 @@ const ContactsPage = () => {
           sx={{
             width: "100%",
             maxWidth: "800px",
-            borderBottom: `3px solid ${theme.palette.primary.main}`,
+            borderBottom: `3px solid`,
+            borderColor: "primary.main",
             pb: "1rem",
             m: "0 auto 3rem auto",
             textAlign: "center",
@@ -119,7 +116,7 @@ const ContactsPage = () => {
                     sx={{
                       transition: "150ms ease-in-out",
                       "&:hover": {
-                        color: theme.palette.secondary.main,
+                        color: "secondary.main",
                       },
                     }}
                   >
@@ -140,7 +137,8 @@ const ContactsPage = () => {
           sx={{
             width: "100%",
             maxWidth: "800px",
-            borderBottom: `3px solid ${theme.palette.primary.main}`,
+            borderBottom: `3px solid`,
+            borderColor: "primary.main",
             pb: "1rem",
             m: "0 auto 3rem auto",
             textAlign: "center",

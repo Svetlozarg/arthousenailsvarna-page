@@ -1,5 +1,6 @@
 import Footer from "@/components/Layout/Footer";
 import Topbar from "@/components/Layout/Topbar";
+import AOS from "@/components/SmallComponents/AOS";
 import ThemeRegistry from "@/theme/ThemeRegistry";
 import type { Metadata } from "next";
 
@@ -68,9 +69,11 @@ export default function RootLayout({
     <html lang="en">
       <ThemeRegistry>
         <body style={{ overflowX: "hidden" }}>
-          <Topbar />
-          {children}
-          <Footer />
+          <AOS>
+            <Topbar />
+            {children}
+            <Footer />
+          </AOS>
         </body>
       </ThemeRegistry>
     </html>

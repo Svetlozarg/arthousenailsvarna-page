@@ -1,10 +1,11 @@
-"use client";
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
-import React, { useEffect } from "react";
-import "aos/dist/aos.css";
-import Aos from "aos";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Gallery",
+};
 
 const photos = [
   {
@@ -58,10 +59,6 @@ const photos = [
 ];
 
 const GalleryPage = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-
   return (
     <Stack justifyContent="center" alignItems="center">
       <PageHeader

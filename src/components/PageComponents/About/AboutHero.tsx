@@ -1,3 +1,4 @@
+"use client";
 import { Stack, Typography, useTheme } from "@mui/material";
 
 const AboutHero = () => {
