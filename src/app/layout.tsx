@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Arthouse Nails Varna",
+    default: "Arthouse Nails Varna - Салон за маникюр и педикюр",
     template: "%s - Arthouse Nails Varna",
   },
   description: "Салон за маникюр и педикюр Arthouse Nails Varna",
