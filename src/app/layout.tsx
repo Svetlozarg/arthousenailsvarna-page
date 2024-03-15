@@ -9,14 +9,17 @@ export const metadata: Metadata = {
     default: "Arthouse Nails Varna",
     template: "%s - Arthouse Nails Varna",
   },
-  description: "Arthouse Nails Varna",
-  twitter: {
-    title: "Arthouse Nails Varna",
-    site: "@arthousenailsvarna",
-    description: "Салон за маникюр и педикюр Arthouse Nails Varna",
-    images:
-      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png?updatedAt=1709223268165",
-    card: "summary_large_image",
+  description: "Салон за маникюр и педикюр Arthouse Nails Varna",
+  category: "Салон за маникюр и педикюр",
+  openGraph: {
+    type: "website",
+    locale: "bg_BG",
+    url: "https://arthousenailsvarna.com/",
+    images: [
+      {
+        url: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png",
+      },
+    ],
   },
   keywords: [
     "nails",
@@ -78,12 +81,14 @@ export const metadata: Metadata = {
     "бизнес",
     "сграда",
   ],
-  openGraph: {
-    type: "website",
-    locale: "bg_BG",
-    url: "https://arthousenailsvarna.com/",
+  twitter: {
+    title: "Arthouse Nails Varna",
+    site: "@arthousenailsvarna",
+    description: "Салон за маникюр и педикюр Arthouse Nails Varna",
+    images:
+      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png",
+    card: "summary_large_image",
   },
-  category: "Салон за маникюр и педикюр",
 };
 
 export default function RootLayout({
