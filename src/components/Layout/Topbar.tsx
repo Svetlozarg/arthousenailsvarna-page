@@ -98,6 +98,8 @@ const Topbar = () => {
               href="https://www.instagram.com/arthouse_nailsvarna/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Instagram"
+              title="Instagram"
             >
               <InstagramIcon
                 sx={{
@@ -110,7 +112,13 @@ const Topbar = () => {
                 }}
               />
             </Link>
-            <Link href="https://www.facebook.com/ArtHouseVarna" target="_blank">
+            <Link
+              href="https://www.facebook.com/ArtHouseVarna"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+              title="Facebook"
+            >
               <FacebookIcon
                 sx={{
                   color: "common.white",

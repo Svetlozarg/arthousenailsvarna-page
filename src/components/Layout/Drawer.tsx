@@ -40,6 +40,8 @@ export default function Drawer() {
           justifyContent: "flex-end",
         }}
         disableRipple
+        aria-label="Open Menu"
+        title="Отвори/Затвори Меню"
       >
         <MenuIcon sx={{ color: "common.white" }} />
       </IconButton>

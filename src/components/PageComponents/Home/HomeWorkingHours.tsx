@@ -16,7 +16,7 @@ const HomeWorkingHours = () => {
           <Typography
             width="100%"
             maxWidth="600px"
-            component="h4"
+            component="h3"
             variant="h3"
             color="primary.main"
           >
@@ -52,6 +52,7 @@ const HomeWorkingHours = () => {
         <iframe
           style={{ width: "600px", height: "400px", borderRadius: "10px" }}
           frameBorder="0"
+          title="Art House Nails Location"
           src='https://www.google.com/maps/embed/v1/place?q=ulitsa+"Nikola+Y.+Vaptzarov"+5,+9010+Varna,+Bulgaria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'
         />
         <Stack
@@ -64,14 +65,14 @@ const HomeWorkingHours = () => {
           <Typography component="p" variant="h4" color="secondary.main">
             Вторник - Събота
           </Typography>
-          <Typography component="h4" variant="h2" color="primary.main">
+          <Typography component="p" variant="h2" color="primary.main">
             09:30 ч. - 19:00 ч.
           </Typography>
 
           <Typography component="p" variant="h4" color="secondary.main" mt={4}>
             Неделя - Понеделник
           </Typography>
-          <Typography component="h4" variant="h2" color="primary.main">
+          <Typography component="p" variant="h2" color="primary.main">
             Почивен ден
           </Typography>
         </Stack>

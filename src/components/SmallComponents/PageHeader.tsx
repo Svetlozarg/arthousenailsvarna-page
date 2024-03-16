@@ -26,7 +26,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
         backgroundPosition: position,
       }}
     >
-      <Typography component="h2" variant="h2" color="white">
+      <Typography component="h1" variant="h2" color="white">
         {title}
       </Typography>
       {subtitle ? (

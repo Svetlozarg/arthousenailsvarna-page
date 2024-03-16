@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Gallery",
+  description: "Вижте нашите най-нови дизайни и се вдъхновете!",
 };
 
 const photos = [
