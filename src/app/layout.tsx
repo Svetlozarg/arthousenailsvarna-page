@@ -114,6 +114,39 @@ export default function RootLayout({
           gtag('config', 'G-VVKQYPT6S6');
           `}
         </Script>
+        <Script id="ld-json" type="application/ld+json">
+          {`"@context": "https://schema.org",
+            "@type": "NailSalon",
+            "name": "Art House Nails Varna",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ul. \"Nikola Y. Vaptzarov\" 5, Chayka Center",
+              "addressLocality": "Varna",
+              "postalCode": "9010",
+              "addressRegion": "Varna",
+              "addressCountry": "BG"
+            },
+            "url": "https://arthousenailsvarna.com",
+            "telephone": "+359876353458",
+            "priceRange": "0.50 лв - 90 лв",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "43.2137669",
+              "longitude": "27.9310515"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "09:30",
+                "closes": "19:00"
+              }
+            ],
+            "image": [
+              "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png?updatedAt=1709223268165"
+            ]
+          `}
+        </Script>
       </head>
       <ThemeRegistry>
         <body style={{ overflowX: "hidden" }}>
