@@ -104,8 +104,9 @@ export default function RootLayout({
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-VVKQYPT6S6"
+          defer
         ></Script>
-        <Script id="google-analytics">
+        <Script id="google-analytics" defer>
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -114,7 +115,7 @@ export default function RootLayout({
           gtag('config', 'G-VVKQYPT6S6');
           `}
         </Script>
-        <Script id="ld-json" type="application/ld+json">
+        <Script id="ld-json" type="application/ld+json" defer>
           {`"@context": "https://schema.org",
             "@type": "NailSalon",
             "name": "Art House Nails Varna",
