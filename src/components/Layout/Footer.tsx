@@ -21,7 +21,7 @@ const Footer = () => {
         flexWrap={{ xs: "wrap", sm: "nowrap" }}
       >
         <Stack>
-          <Typography component="h6" variant="h4" mb={4}>
+          <Typography component="p" variant="h4" mb={4}>
             Запазете своя час
           </Typography>
 
@@ -44,7 +44,7 @@ const Footer = () => {
         </Stack>
 
         <Stack>
-          <Typography component="h6" variant="h4" mb={4}>
+          <Typography component="p" variant="h4" mb={4}>
             Къде се намираме
           </Typography>
 
@@ -67,7 +67,7 @@ const Footer = () => {
         </Stack>
 
         <Stack>
-          <Typography component="h6" variant="h4" mb={4}>
+          <Typography component="p" variant="h4" mb={4}>
             Социални мрежи
           </Typography>
           <Stack gap={2}>
@@ -130,7 +130,7 @@ const Footer = () => {
         height="3rem"
         justifyContent="center"
         alignItems="center"
-        bgcolor={theme.palette.grey[800]}
+        bgcolor={theme.palette.grey[900]}
       >
         <Typography component="p" variant="body1" color="common.white">
           © 2024 ArtHouse Nails Varna. All Rights Reserved
