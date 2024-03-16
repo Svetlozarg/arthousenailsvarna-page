@@ -3,6 +3,7 @@ import Topbar from "@/components/Layout/Topbar";
 import AOS from "@/components/SmallComponents/AOS";
 import ThemeRegistry from "@/theme/ThemeRegistry";
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -99,6 +100,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-VVKQYPT6S6"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+  
+          gtag('config', 'G-VVKQYPT6S6');
+          `}
+        </Script>
+      </head>
       <ThemeRegistry>
         <body style={{ overflowX: "hidden" }}>
           <AOS>
