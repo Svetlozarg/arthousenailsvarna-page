@@ -94,6 +94,9 @@ const HomeServices = () => {
               width={100}
               height={100}
               style={{
+                width: "100px",
+                height: "100px",
+                objectFit: "cover",
                 borderRadius: "50%",
                 border: "2px solid",
                 borderColor: theme.palette.secondary.main,

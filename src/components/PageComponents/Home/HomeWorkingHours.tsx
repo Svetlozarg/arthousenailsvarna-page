@@ -49,12 +49,17 @@ const HomeWorkingHours = () => {
         mt={10}
         flexWrap="wrap"
       >
-        <iframe
-          style={{ width: "600px", height: "400px", borderRadius: "10px" }}
-          frameBorder="0"
+        <object
           title="Art House Nails Location"
-          src='https://www.google.com/maps/embed/v1/place?q=ulitsa+"Nikola+Y.+Vaptzarov"+5,+9010+Varna,+Bulgaria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'
-        />
+          data="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%92%D0%B0%D1%80%D0%BD%D0%B0%20%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80%20%D0%9F%D1%80%D0%B8%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B8,%20ul.%20%22Nikola%20Y.%20Vaptzarov%22%205,%209002%20Varna+(Art%20House%20Nails)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          style={{ width: "600px", height: "400px", borderRadius: "10px" }}
+        >
+          <embed
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%92%D0%B0%D1%80%D0%BD%D0%B0%20%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80%20%D0%9F%D1%80%D0%B8%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B8,%20ul.%20%22Nikola%20Y.%20Vaptzarov%22%205,%209002%20Varna+(Art%20House%20Nails)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            style={{ width: "600px", height: "400px", borderRadius: "10px" }}
+          ></embed>
+          Error: Embedded data could not be displayed.
+        </object>
         <Stack
           width="100%"
           maxWidth="500px"
