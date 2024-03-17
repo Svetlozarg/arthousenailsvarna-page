@@ -122,7 +122,7 @@ export default function RootLayout({
             "name": "Art House Nails Varna",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "ul. \"Nikola Y. Vaptzarov\" 5, Chayka Center",
+              "streetAddress": "ul. 'Nikola Y. Vaptzarov' 5, Chayka Center",
               "addressLocality": "Varna",
               "postalCode": "9010",
               "addressRegion": "Varna",
