@@ -116,7 +116,7 @@ export default function RootLayout({
           `}
         </Script>
         <Script id="ld-json" type="application/ld+json" defer>
-          {`"@context": "https://schema.org",
+          {`{"@context": "https://schema.org",
             "@type": "NailSalon",
             "name": "Art House Nails Varna",
             "address": {
@@ -145,7 +145,7 @@ export default function RootLayout({
             ],
             "image": [
               "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png?updatedAt=1709223268165"
-            ]
+            ]}
           `}
         </Script>
       </head>
