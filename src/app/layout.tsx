@@ -116,7 +116,8 @@ export default function RootLayout({
           `}
         </Script>
         <Script id="ld-json" type="application/ld+json" defer>
-          {`{"@context": "https://schema.org",
+          {`
+            {"@context": "https://schema.org",
             "@type": "NailSalon",
             "name": "Art House Nails Varna",
             "address": {
