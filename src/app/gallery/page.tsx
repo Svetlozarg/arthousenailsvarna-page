@@ -3,6 +3,25 @@ import { Stack, Typography } from "@mui/material";
 import { Metadata } from "next";
 import Image from "next/image";
 import hero from "../../../public/hero.jpeg";
+import img1 from "../../../public/assets/nails/img1.jpg";
+import img2 from "../../../public/assets/nails/img2.jpg";
+import img3 from "../../../public/assets/nails/img3.jpg";
+import img4 from "../../../public/assets/nails/img4.jpg";
+import img5 from "../../../public/assets/nails/img5.jpg";
+import img6 from "../../../public/assets/nails/img6.jpg";
+import img7 from "../../../public/assets/nails/img7.jpg";
+import img8 from "../../../public/assets/nails/img8.jpg";
+import img9 from "../../../public/assets/nails/img9.jpg";
+import img10 from "../../../public/assets/nails/img10.jpg";
+import img11 from "../../../public/assets/nails/img11.jpg";
+import img12 from "../../../public/assets/nails/img12.jpg";
+import img13 from "../../../public/assets/nails/img13.jpg";
+import img14 from "../../../public/assets/nails/img14.jpg";
+import img15 from "../../../public/assets/nails/img15.jpg";
+import img16 from "../../../public/assets/nails/img16.jpg";
+import img17 from "../../../public/assets/nails/img17.jpg";
+import img18 from "../../../public/assets/nails/img18.jpg";
+import img19 from "../../../public/assets/nails/img19.jpg";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -11,52 +30,61 @@ export const metadata: Metadata = {
 
 const photos = [
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0083_DgvYyildr.HEIC?updatedAt=1709220879288",
+    src: img1.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_9709_UKRgj7pJ-.JPG?updatedAt=1709220877447",
+    src: img2.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0254_Wj3OvFeX1.JPG?updatedAt=1709220874076",
+    src: img3.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0131_6b4Gtp5wVy.HEIC?updatedAt=1709220878992",
+    src: img4.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_6885_SmDcGGqjA.HEIC?updatedAt=1709220878445",
+    src: img5.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_7558_hjYx1V6QS.HEIC?updatedAt=1709220878345",
+    src: img6.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_8404_-zIbukI99.HEIC?updatedAt=1709220878282",
+    src: img7.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_6168_1YGzRGvz3.HEIC?updatedAt=1709220877457",
+    src: img8.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_5337_9o-dEFVDW.HEIC?updatedAt=1709220876251",
+    src: img9.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_5152_FbkEfIoTV.HEIC?updatedAt=1709220876028",
+    src: img10.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_3105_-_anE0U0I.HEIC?updatedAt=1709220875023",
+    src: img11.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_4852_J7SyPQaKm.HEIC?updatedAt=1709220874989",
+    src: img12.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_2839_CZJWwoJwF.HEIC?updatedAt=1709220874964",
+    src: img13.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_4879_WlWyBU0TyE.HEIC?updatedAt=1709220874980",
+    src: img14.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_4605_03Zsh8Yce.HEIC?updatedAt=1709220874728",
+    src: img15.src,
   },
   {
-    src: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0159_k3yh9lrAT.HEIC?updatedAt=1709220874365",
+    src: img16.src,
+  },
+  {
+    src: img17.src,
+  },
+  {
+    src: img18.src,
+  },
+  {
+    src: img19.src,
   },
 ];
 

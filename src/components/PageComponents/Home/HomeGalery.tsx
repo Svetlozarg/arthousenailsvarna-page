@@ -3,22 +3,27 @@ import Button from "@/components/MUIComponents/Button";
 import { Box, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import image from "../../../../public/assets/studio.jpg";
+import image1 from "../../../../public/assets/nails/img1.jpg";
+import image2 from "../../../../public/assets/nails/img5.jpg";
+import image3 from "../../../../public/assets/nails/img4.jpg";
+import image4 from "../../../../public/assets/nails/img19.jpg";
 
 const IMAGE_DATA = [
   {
-    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0254_Wj3OvFeX1.JPG?updatedAt=1709220874076",
+    img: image1.src,
     title: "Image",
   },
   {
-    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0083_DgvYyildr.HEIC?updatedAt=1709220879288",
+    img: image2.src,
     title: "Image",
   },
   {
-    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0144_gxD6d7js5.HEIC?updatedAt=1709220879610",
+    img: image3.src,
     title: "Image",
   },
   {
-    img: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_9709_UKRgj7pJ-.JPG?updatedAt=1709220877447",
+    img: image4.src,
     title: "Image",
   },
 ];
@@ -34,8 +39,7 @@ const HomeGalery = () => {
       alignItems="center"
       py={8}
       sx={{
-        background:
-          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.squarespace-cdn.com/content/v1/62e6c7b70731e15cb02e68de/1660253804440-KZP04KWFFS4DCCBM8SQI/IMG_0122.jpg')",
+        background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${image.src}')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",
