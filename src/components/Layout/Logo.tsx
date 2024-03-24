@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../../../public/logo.png";
 
 const Logo = () => {
   return (
     <Link href="/">
       <Image
-        src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/arthouse-logo_WL7rBEGm-.png"
+        src={logo}
         width={200}
         height={70}
         alt="Art House Nails Varna Logo"

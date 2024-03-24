@@ -7,6 +7,7 @@ import image3 from "../../../../public/assets/home3.jpg";
 import image4 from "../../../../public/assets/Nail-Care.png";
 import image5 from "../../../../public/assets/Nail-Art.png";
 import image6 from "../../../../public/assets/Add-Ons.png";
+import image7 from "../../../../public/assets/sterilization.png";
 
 const HOME_SERVICES_DATA = [
   {
@@ -31,7 +32,7 @@ const HOME_SERVICES_DATA = [
     title: "Стерилизация",
     description:
       "Всички наши инструменти са стерилизирани и дезинфекцирани, за да ви осигурим максимална хигиена и безопасност.",
-    icon: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Treatments_RP8Ogrneu.png?updatedAt=1707560242907",
+    icon: image7.src,
   },
 ];
 
