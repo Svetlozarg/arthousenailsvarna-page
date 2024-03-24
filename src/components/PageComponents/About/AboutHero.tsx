@@ -1,5 +1,6 @@
 "use client";
 import { Stack, Typography, useTheme } from "@mui/material";
+import image from "../../../../public/assets/reception.jpg";
 
 const AboutHero = () => {
   const theme = useTheme();
@@ -70,8 +71,7 @@ const AboutHero = () => {
         alignItems="center"
         py={20}
         sx={{
-          background:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0351_8SwThWCYK.png?updatedAt=1709223268165')",
+          background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${image.src}')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center center",

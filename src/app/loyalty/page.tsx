@@ -2,6 +2,8 @@ import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import { Metadata } from "next";
 import Image from "next/image";
+import hero from "../../../public/hero.jpeg";
+import image from "../../../public/assets/loyalty.jpg";
 
 export const metadata: Metadata = {
   title: "Loyalty Program",
@@ -12,10 +14,7 @@ export const metadata: Metadata = {
 const LoyaltyPage = () => {
   return (
     <Stack>
-      <PageHeader
-        title="Програма за лоялност"
-        image="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/hero_93J8zaZzP.jpeg?updatedAt=1707491914595"
-      />
+      <PageHeader title="Програма за лоялност" image={hero.src} />
 
       <Stack width="100%" maxWidth="1200px" gap={2} px={2} py={10} m="0 auto">
         <Typography
@@ -57,7 +56,7 @@ const LoyaltyPage = () => {
           mt={10}
         >
           <Image
-            src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0387_5CtJw0Pqt.HEIC?updatedAt=1709220875020"
+            src={image}
             alt="Image that shows who we are"
             width="500"
             height="300"

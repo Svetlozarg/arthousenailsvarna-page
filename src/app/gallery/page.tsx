@@ -2,6 +2,7 @@ import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack, Typography } from "@mui/material";
 import { Metadata } from "next";
 import Image from "next/image";
+import hero from "../../../public/hero.jpeg";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -62,10 +63,7 @@ const photos = [
 const GalleryPage = () => {
   return (
     <Stack justifyContent="center" alignItems="center">
-      <PageHeader
-        title="Галерия"
-        image="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/hero_93J8zaZzP.jpeg?updatedAt=1707491914595"
-      />
+      <PageHeader title="Галерия" image={hero.src} />
 
       <Stack my={6}>
         <Typography component="h3" variant="h2" textAlign="center" pb={2}>

@@ -1,25 +1,31 @@
 "use client";
 import { Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
+import image1 from "../../../../public/assets/home1.jpg";
+import image2 from "../../../../public/assets/home2.jpg";
+import image3 from "../../../../public/assets/home3.jpg";
+import image4 from "../../../../public/assets/Nail-Care.png";
+import image5 from "../../../../public/assets/Nail-Art.png";
+import image6 from "../../../../public/assets/Add-Ons.png";
 
 const HOME_SERVICES_DATA = [
   {
     title: "Грижа за ноктите",
     description:
       "Предлагаме професионална грижа за вашите нокти, гарантираща красота и здраве.",
-    icon: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/NailCare_OnXxMr7I4.png?updatedAt=1707560242878",
+    icon: image4.src,
   },
   {
     title: "Дизайн на нокти",
     description:
       "Нека ноктите ви бъдат израз на вашата индивидуалност с нашите уникални дизайни и техники.",
-    icon: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/NailArt_AmirayAvo.png?updatedAt=1707560242892",
+    icon: image5.src,
   },
   {
     title: "Допълнения",
     description:
       "Осигурете си моменти на релакс с нашите терапии и масажи, докато се наслаждавате с чаша ароматно кафе.",
-    icon: "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/AddOns_vBqkeGgNv.png?updatedAt=1707560242910",
+    icon: image6.src,
   },
   {
     title: "Стерилизация",
@@ -35,24 +41,21 @@ const HOME_SERVICES_SECOND_DATA = [
     title: "Маникюр",
     description:
       "Предлагаме ви разнообразие от услуги, които ще ви помогнат да поддържате красиви и здрави нокти. Ние ви предлагаме най-подходящите техники и продукти, за да се насладите на перфектни резултати.",
-    image:
-      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_7185_jli866bJS.HEIC?updatedAt=1709220876970",
+    image: image1.src,
   },
   {
     slogan: "Релаксираща грижа за краката ви",
     title: "Педикюр",
     description:
       "Отпуснете се и се насладете на релаксиращ педикюр, който ще освежи и подмлади вашите крака. Ние ще се погрижим за всеки детайл, осигурявайки ви усещане за комфорт и добре балансирана грижа.",
-    image:
-      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_5579_jTnF3OTsW.HEIC?updatedAt=1709220876587",
+    image: image2.src,
   },
   {
     slogan: "Изключително качество и стерилност",
     title: "Стерилна Среда",
     description:
       "В нашия салон отдаваме изключително значение на стерилността и хигиената. Нашата цел е да осигурим безопасна и здравословна среда за нашите клиенти. Следователно, извършваме редовни процедури за почистване и стерилизация на всички инструменти и работни повърхности. Вярваме, че само в чиста и стерилна среда може да се постигне най-доброто качество на услугите, като същевременно се гарантира безопасността и комфортът на нашите клиенти.",
-    image:
-      "https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/FA788D37-5AA0-40B3-BC9E-3D222C4A0CFD_ppN1B-O9KV.jpg?updatedAt=1709220878616",
+    image: image3.src,
   },
 ];
 

@@ -9,6 +9,7 @@ import Link from "next/link";
 import LocalParkingIcon from "@mui/icons-material/LocalParking";
 import "aos/dist/aos.css";
 import { Metadata } from "next";
+import hero from "../../../public/assets/card.jpg";
 
 export const metadata: Metadata = {
   title: "Contacts",
@@ -40,10 +41,7 @@ const CONTACTS_DATA = [
 const ContactsPage = () => {
   return (
     <Stack justifyContent="center" alignItems="center">
-      <PageHeader
-        title="Свържете се с нас"
-        image="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/Image/IMG_0406__ycw7dTJki.HEIC?updatedAt=1709220874955"
-      />
+      <PageHeader title="Свържете се с нас" image={hero.src} />
 
       <Stack justifyContent="center" alignItems="center" px={2} py={8} mb={6}>
         <Typography

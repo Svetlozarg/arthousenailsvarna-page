@@ -3,6 +3,8 @@ import { Stack, Typography } from "@mui/material";
 import Button from "../MUIComponents/Button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import image1 from "../../../public/assets/instaBanner.jpg";
+import image2 from "../../../public/assets/loyaltyBanner.jpg";
 
 const InstagramGiftCardsSection = () => {
   const router = useRouter();
@@ -22,8 +24,7 @@ const InstagramGiftCardsSection = () => {
         alignItems="center"
         flex={1}
         sx={{
-          backgroundImage:
-            "url('https://ik.imagekit.io/obelussoft/Arthousenailsvarna/pb_4-1_-xttQq4rM.jpg?updatedAt=1707823386357')",
+          backgroundImage: `url('${image1.src}')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center center",
@@ -54,8 +55,7 @@ const InstagramGiftCardsSection = () => {
         alignItems="center"
         flex={1}
         sx={{
-          backgroundImage:
-            "url('https://ik.imagekit.io/obelussoft/Arthousenailsvarna/pb_4-2_UD-2oa8MKZ.jpg?updatedAt=1707823386329')",
+          backgroundImage: `url('${image2.src}')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center center",

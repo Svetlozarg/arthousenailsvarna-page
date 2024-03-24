@@ -1,6 +1,7 @@
 "use client";
 import { Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
+import image from "../../../../public/assets/artist.jpg";
 
 const AboutTeam = () => {
   const theme = useTheme();
@@ -32,7 +33,7 @@ const AboutTeam = () => {
         flexWrap="wrap"
       >
         <Image
-          src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/plamena_0PaRXLzPK.jpg?updatedAt=1707821536077"
+          src={image}
           alt="Nail artists image"
           width={500}
           height={400}
@@ -43,7 +44,7 @@ const AboutTeam = () => {
             borderBottomRightRadius: 10,
             width: "100%",
             maxWidth: "350px",
-            height: "auto",
+            height: "450px",
             objectFit: "cover",
             border: `3px solid ${theme.palette.secondary.main}`,
           }}

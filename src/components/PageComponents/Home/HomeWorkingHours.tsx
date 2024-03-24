@@ -1,6 +1,7 @@
 "use client";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import image from "../../../../public/assets/polish.png";
 
 const HomeWorkingHours = () => {
   return (
@@ -26,7 +27,7 @@ const HomeWorkingHours = () => {
         </Stack>
 
         <Image
-          src="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/NailPolish_Jk2Huh3iqo.png?updatedAt=1707566182705"
+          src={image}
           alt="nail polish image"
           width={500}
           height={500}

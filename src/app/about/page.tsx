@@ -4,6 +4,7 @@ import InstagramGiftCardsSection from "@/components/SmallComponents/InstagramGif
 import PageHeader from "@/components/SmallComponents/PageHeader";
 import { Stack } from "@mui/material";
 import { Metadata } from "next";
+import hero from "../../../public/hero.jpeg";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -14,10 +15,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <Stack overflow="hidden">
-      <PageHeader
-        title="За Нас"
-        image="https://ik.imagekit.io/obelussoft/Arthousenailsvarna/hero_93J8zaZzP.jpeg?updatedAt=1707491914595"
-      />
+      <PageHeader title="За Нас" image={hero.src} />
 
       <Stack p={4}>
         <AboutHero />

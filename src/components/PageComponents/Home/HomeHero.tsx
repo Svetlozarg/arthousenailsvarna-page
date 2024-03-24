@@ -1,6 +1,7 @@
 import Button from "@/components/MUIComponents/Button";
 import { Box, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
+import hero from "../../../../public/hero.jpeg";
 
 const HomeHero = () => {
   const router = useRouter();
@@ -10,8 +11,7 @@ const HomeHero = () => {
       width="100vw"
       height="100vh"
       sx={{
-        background:
-          "linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://ik.imagekit.io/obelussoft/Arthousenailsvarna/hero_93J8zaZzP.jpeg?updatedAt=1707491914595')",
+        background: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('${hero.src}')`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
         backgroundSize: "cover",
