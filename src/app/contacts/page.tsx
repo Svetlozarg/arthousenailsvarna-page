@@ -10,6 +10,7 @@ import LocalParkingIcon from "@mui/icons-material/LocalParking";
 import "aos/dist/aos.css";
 import { Metadata } from "next";
 import hero from "../../../public/assets/card.jpg";
+import Button from "@/components/MUIComponents/Button";
 
 export const metadata: Metadata = {
   title: "Contacts",
@@ -51,8 +52,9 @@ const ContactsPage = () => {
           mb={4}
           data-aos="fade"
         >
-          Ако имате въпроси, не се колебайте да се свържете с нас. Ние сме тук,
-          за да ви помогнем!
+          Ако имате въпроси, не се колебайте да се свържете с нас като ни се
+          обадите или ни пишете в нашите социални мрежи. Ние сме тук, за да ви
+          помогнем!
         </Typography>
         <Typography
           component="h3"
@@ -61,9 +63,17 @@ const ContactsPage = () => {
           mb={6}
           data-aos="fade"
         >
-          Ако искате да си запазите час, моля свържете се с нас като ни се
-          обадите или ни пишете в нашите социални мрежи!
+          За онлайн резервации, моля посетете нашата платформа тук:
         </Typography>
+
+        <Link
+          href="https://studio24.bg/art-house-nails-s9315?m&"
+          target="_blank"
+          rel="noreferrer"
+          style={{ marginBottom: "2rem" }}
+        >
+          <Button message="Резервирай час" />
+        </Link>
 
         <Typography
           component="h2"

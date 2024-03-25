@@ -1,11 +1,9 @@
 import Button from "@/components/MUIComponents/Button";
 import { Box, Stack, Typography } from "@mui/material";
-import { useRouter } from "next/navigation";
 import hero from "../../../../public/hero.jpeg";
+import Link from "next/link";
 
 const HomeHero = () => {
-  const router = useRouter();
-
   return (
     <Stack
       width="100vw"
@@ -45,10 +43,16 @@ const HomeHero = () => {
         </Typography>
 
         <Box data-aos="slide-up">
-          <Button
-            message="Резервирай час"
-            onClick={() => router.push("/contacts", { scroll: true })}
-          />
+          <Link
+            href="https://studio24.bg/art-house-nails-s9315?m&"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              message="Резервирай час"
+              // onClick={() => router.push("/contacts", { scroll: true })}
+            />
+          </Link>
         </Box>
       </Stack>
     </Stack>

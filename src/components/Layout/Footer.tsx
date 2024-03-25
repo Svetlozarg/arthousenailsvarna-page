@@ -4,6 +4,7 @@ import PushPinIcon from "@mui/icons-material/PushPin";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LocalParkingIcon from "@mui/icons-material/LocalParking";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import AddToHomeScreenIcon from "@mui/icons-material/AddToHomeScreen";
 
 const Footer = () => {
   const theme = useTheme();
@@ -56,12 +57,23 @@ const Footer = () => {
               </Typography>
             </Stack>
             <Stack direction="row" gap={1}>
-              <LocalParkingIcon sx={{ color: "secondary.main" }} />
-              <Typography>Подземен паркинг</Typography>
-            </Stack>
-            <Stack direction="row" gap={1}>
               <AccessTimeIcon sx={{ color: "secondary.main" }} />
               <Typography>Вторник - Събота: 09:30 ч. - 19:00 ч.</Typography>
+            </Stack>
+            <Stack direction="row" gap={1}>
+              <AddToHomeScreenIcon sx={{ color: "secondary.main" }} />
+              <Link
+                href="https://studio24.bg/art-house-nails-s9315?m&"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <Typography>Онлайн Резервации</Typography>
+              </Link>
+            </Stack>
+            <Stack direction="row" gap={1}>
+              <LocalParkingIcon sx={{ color: "secondary.main" }} />
+              <Typography>Подземен паркинг</Typography>
             </Stack>
           </Stack>
         </Stack>
